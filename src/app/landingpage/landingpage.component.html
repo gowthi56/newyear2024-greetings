@@ -1,0 +1,9 @@
+<div class="background bg-indigo-900 min-h-screen flex justify-center items-center" *ngIf = "currentTab">
+    <div class="bg-slate-300 p-5 rounded w-[500px]">
+        <form name="greetings form">
+            <input type="text" placeholder="enter your name" class="block w-full mb-4 p-2" autofocus required (input) = myinp($event)>
+            <button type = "button" (click) = "inputPage()"class="btn bg-indigo-800 w-full hover:bg-indigo-400">Submit</button>
+        </form>
+    </div>
+</div>
+<app-userpage *ngIf = "opennewTab"></app-userpage>
